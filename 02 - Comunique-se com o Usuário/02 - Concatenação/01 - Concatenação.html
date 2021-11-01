@@ -1,0 +1,89 @@
+<!--
+    Agora vamos exibir a idade de uma pessoa:
+
+    <meta charset="UTF-8">
+
+    <script>
+        alert("A idade do Fulano é 18 ");
+    </script>
+
+    Alternativamente, podemos criar um segundo alerta para exibir esta informação:
+
+    <meta charset="UTF-8">
+
+    <script>
+        alert("A idade do Fulano é ");
+        alert("18");
+    </script>
+
+    Salvaremos e recarregaremos a página no navegador. Surge um primeiro alerta, com a mensagem "A idade do Fulano é", pressionaremos "OK" e, em seguida, surge um segundo pop up, com a mensagem "18".
+
+    Só que, se utilizarmos o alert no mundo JavaScript para exibir um texto para o usuário, e caso tenhamos dez mensagens, quantas vezes o usuário terá de pressionar "OK"? Várias. Isso tornará a experiência do visitante ruim. Se ele quiser ler a última linha, não conseguirá, porque surgirão muitos alertas seguidos.
+
+    O que fazer? O mundo JavaScript é representado por tudo que está inserido na tag <script>. Todo o conteúdo desta tag é interpretado pelo navegador como JavaScript. O mundo HTML é compreendido como tudo que está fora da tag <script>. O que faremos é escrever, a partir do mundo JS, um HTML. Para isto, adicionaremos document.write():
+
+    <script>
+
+        document.write()
+
+    </script>
+
+    A palavra document significa, em português, "documento". Nossa página HTML, nosso programa, é um documento. Já a palavra write corresponde à palavra "escrever". O write recebe parênteses ao final, ou seja, ele aceita receber algo para escrever no documento.
+
+    <meta charset="UTF-8">
+
+    <script>
+
+        document.write("A idade do Flávio é ");
+
+    </script>
+
+    Por que então utilizar o document.write() para, do mundo JavaScript, escrever em HTML? Porque o JavaScript é uma linguagem dinâmica. Podemos, eventualmente, imprimir estas informações múltiplas vezes. Apesar de escrevermos mais, no JavaScript podemos escrever um código dinâmico, mesmo em HTML.
+
+    O que aconteceria se escrevêssemos o número 18 entre parênteses, sem as aspas?
+
+    <script>
+
+        document.write("A idade do Flávio é ");
+        document.write(18);
+
+    </script>
+
+     O JavaScript só considera algo como texto se estiver entre aspas, portanto, da forma como escrevemos 18, o número será interpretado como texto? Não. Como sua representação é numérica, ele será interpretado como um número.
+
+     Portanto, o document.write aceita trabalhar com tipo texto - "tipo" indica que é um tipo de dado -, cujo termo técnico é string, e "18", que é um número. Minha idade real não é 18, entretanto, os números nos permitem realizar operações. Por exemplo, o símbolo + representa soma, assim, podemos somar "18 + 20":
+
+     <script>
+
+        document.write("A idade do Flávio é ");
+        document.write(18 + 20);
+
+    </script>
+
+    Faremos uma operação de adição, onde ambos os números serão colocados entre aspas:
+
+    <script>
+
+        document.write("A idade do Flávio é ");
+        document.write("18" + "20");
+
+    </script>
+
+    O resultado será:
+
+    A idade do Flávio é 1820
+
+    Quando temos uma operação de soma envolvendo texto, o JavaScript não entende se tratar de um número, e portanto realiza uma operação à qual damos o nome de concatenação. Isto significa que ele juntou um texto ao outro, o que resultou em 1820. Este é então passado para o write, que o imprime desta forma.
+
+    Temos o comando document.write, e precisamos passar para ele o que desejamos imprimir. Da forma como escrevemos, ele entenderá que queremos imprimir a concatenação do número 18 com 20. Portanto, a primeira operação realizada pelo JavaScript é unir estes dois números para, em seguida, informar ao write que ele deve imprimir.
+
+    O que acontece se tirarmos as aspas em apenas um dos números?
+
+    document.write("18" + 20);
+
+    Estamos tentando somar um texto com um número. E o resultado será:
+
+    A idade do Flávio é 1820
+
+    Aconteceu que o JavaScript, ao receber um texto e um número, converte este último para texto, resultando em 1820. Ou seja, quando há texto e número, ele converte tudo para texto.
+-->

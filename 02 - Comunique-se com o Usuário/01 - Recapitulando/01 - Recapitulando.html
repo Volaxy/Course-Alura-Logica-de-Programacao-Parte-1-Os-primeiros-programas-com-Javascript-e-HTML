@@ -1,0 +1,31 @@
+<!--
+    Existe um conceito em programação que se chama de convenção de código.
+
+    Em um prédio ou condomínio, todos os moradores devem seguir a respectiva convenção de condomínio. Por exemplo, digamos que é proibido entrar molhado no elevador - alguém lhe impede de fazer isso? Não, mas isso não será bem visto, podendo inclusive ser penalizado com multa.
+
+    Na programação temos algo parecido, que é a convenção do código com o qual estamos trabalhando. Por exemplo, há uma convenção de que as tags HTML devem ser escritas com letras minúsculas. Porém, se utilizarmos <H1> ela funcionará perfeitamente.
+
+    Se testarmos um código com esse padrão, funcionará perfeitamente, entretanto, a convenção é utilizar letras minúsculas para as tags.
+
+    Outro ponto: da mesma forma, se na tag <script> escrevermos em letras maiúsculas, o resultado não será alterado, mas a convenção aconselha a mantermos as letras minúsculas. No entanto, tenha atenção, o mundo JavaScript é mais rígido.
+
+    Por exemplo, se escrevermos ALERT em maiúsculo, assim:
+
+    <script>
+
+        ALERT("Isso sim é um programa");
+
+    </script>
+
+    E recarregarmos a página, não teremos o pop up. Ao abrirmos o console, veremos a seguinte mensagem:
+
+    Uncaught ReferenceError: ALERT is not defined
+
+    Ou seja, ALERT não foi definido. O mundo JavaScript só está preparado para entender a sintaxe alert, em letras minúsculas. Devemos ser mais cuidadosos no mundo JavaScript. Ao escrevermos em letras maiúsculas, estamos incorrendo em um erro de sintaxe. É como o português, ao escrevermos uma palavra errada, estamos cometendo um erro de sintaxe.
+
+    Às instruções que o JavaScript recebe é dado o nome de parâmetro, que o alert precisa receber. Isto faz parte da lógica de programação.
+-->
+<meta charset="UTF-8">
+<script>
+    alert("A idade do Flávio é")
+</script>
