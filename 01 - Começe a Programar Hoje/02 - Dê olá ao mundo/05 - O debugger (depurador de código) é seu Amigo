@@ -1,0 +1,3 @@
+Toda linguagem de programação possui ferramentas que nos auxiliam a descobrir o que há de errado com o código, principalmente no que diz respeito a erros de sintaxe, aquele tipo de erro que ocorre quando deixamos de seguir regras que a linguagem de programação utiliza.
+
+É possível descobrir rapidamente a linha do erro utilizando o depurador (debugger) do navegador e verificado na aba "console" se há alguma mensagem de erro (mensagens de erro são assinaladas na cor vermelha)

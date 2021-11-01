@@ -1,0 +1,95 @@
+<!--
+    Utilizaremos uma tag chamada âncora, representada pela letra "a". O conteúdo dela será a palavra "aqui":
+
+    <h1>Meu primeiro teste!</h1>
+    <br>
+    Seria isso um programa? Descubra visitando a Alura <a>aqui</a>!
+
+    Por meio do atributo href, indicaremos o endereço web da Alura:
+
+    <a href="http://www.alura.com.br">aqui</a>
+
+    Utilizamos uma tag HTML de âncora para criar links na web. Salvaremos e retornaremos ao navegador.
+
+    O problema do código que escrevemos é que, apesar de interessante, o HTML é estático, isto é, não é dinâmico. E se quisermos que o HTML, em vez de pular poucas linhas, pule dez, quinze, ou vinte? Teremos que abrir o arquivo HTML e inserir diversas tags do tipo <br>, da seguinte forma:
+
+    <h1>Meu primeiro teste!</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    Seria isso um programa? Descubra visitando a Alura <a href="http://www.alura.com.br">aqui</a>.
+
+    Assim, sempre que quisermos aumentar ou diminuir o número de quebras de linha teremos que remover ou adicionar as tags <br>, sempre modificando o documento. Como ele é estático, não é possível, por exemplo, exibir um contador na tela com a passagem das horas, tampouco será possível capturar as informações do usuário.
+
+    Para que possamos de fato programar, precisaremos utilizar uma outra linguagem. O navegador é poliglota, e "fala" algumas linguagens além de HTML, sendo capaz de trabalhar com uma linguagem verdadeiramente de programação, que é o JavaScript.
+
+    Queremos exibir um alerta para o usuário, um pop-up que surja na tela e contenha a seguinte mensagem: "isso aqui é uma linguagem dinâmica" ou "isso aqui é uma linguagem de programação".
+
+    Para fazer isso escreveremos a seguinte linha:
+
+    "Isso sim é um programa"
+
+    O JavaScript nos permite exibir um pop-up na tela, que será de alerta. Precisaremos utilizar uma instrução da linguagem indicando que um alerta deverá ser exibido:
+
+    alert"Isso sim é um programa";
+
+    Há uma peculiaridade: o texto deve estar entre parênteses e aspas duplas " ", e com um ; (ponto e vírgula) no fim:
+
+    alert("Isso sim é um programa");
+
+    Uso do ponto e vírgula no final de uma instrução JavaScript é opcional. Contudo, ao avançar nesta linguagem você verá determinados processamentos de código podem resultar em algo não esperado na ausência do ponto e vírgula. Sendo assim, vamos criar desde já o hábito de terminar uma instrução com o ponto e vírgula.
+
+    Salvaremos o arquivo e vaos recarregar a página.
+
+    Porém, o pop up não aparece. O que temos é o texto que gostaríamos que fosse exibido na tela para o usuário aparecendo no corpo do HTML e, ainda, com um problema de acentuação - que resolveremos adiante.
+
+    Por que isto acontece? Como o navegador é poliglota, ou seja, entende mais de uma linguagem (por exemplo, HTML e JavaScript), temos que indicar que determinada linha é uma instrução.
+
+    Para fazer isso, escreveremos uma tag <script>, que também abre e fecha:
+
+    <script>
+        alert("Isso sim é um programa");
+    </script>
+
+    Quando o navegador for processar esta instrução, ele perceberá que ela está inserida em uma tag <script>, e deixará de olhá-la como HTML, passando a interpretá-la como JavaScript. Retornaremos ao navegador e recarregaremos a página.
+
+    Podemos pressionar "Ok", e vemos que há um problema de acentuação:
+
+    Para resolvermos o problema da acentuação, ao salvarmos o arquivo em nosso disco, o faremos com um conjunto de caracteres, e o padrão é UTF-8. Sendo assim, utilizamos a tag desta maneira:
+
+    <meta charset="UTF-8">
+
+    Estamos indicando ao navegador como deve ser a interpretação das cadeias de caracteres, ou seja, do texto que está sendo exibido. Portanto, a simples adição desta tag resolverá o problema de acentuação.
+
+    Será que é necessário todo este texto? O que aconteceria, por exemplo, se removêssemos os parênteses de "Isso sim é um programa"?
+
+    alert"Isso sim é um programa";
+
+    Salvaremos, retornaremos ao navegador e, ao recarregaremos a página, nenhum pop up será exibido. Com isto, entendemos que é interessante aprendermos que todo navegador conta com um plug-in, um depurador, que indica onde nosso código tem problemas. Ele pode ser acessado por meio da tecla "F12", ou por "Ctrl + Shift + C".
+
+    No depurador, há uma aba chamada "Console", localizada na barra de menu superior. É possível o abrirmos acessando o menu "Visualizar" também, na barra de menu superior, selecionando "Desenvolvedor > Console JavaScript".
+
+    Há uma mensagem indicando que em nosso teste, há um erro de sintaxe:
+
+    Uncaught SyntaxError: Unexpected string
+
+    String é um nome bastante comum para texto, dados do tipo "texto", em programação. Portanto, temos um texto não esperado. Retornaremos ao editor de texto no ponto indicado pelo console, onde se localiza o erro. Toda linguagem de programação de qualidade possui algum mecanismo capaz de indicar onde há erros de sintaxe em seu código.
+
+    Os elementos que vimos agora - o browser, o editor de texto, o depurador - são usados para identificarmos os erros em nosso código e compõem as ferramentas que utilizamos para programar e debuggar o código.
+-->
+<meta charset="UTF-8">
+<h1>Meu primeiro teste!</h1>
+<br>
+Seria isso um programa? Descubra visitando a Alura <a href="http://www.alura.com.br">aqui</a>!
+
+<script>
+
+    alert("Isso sim é um programa");
+
+</script>

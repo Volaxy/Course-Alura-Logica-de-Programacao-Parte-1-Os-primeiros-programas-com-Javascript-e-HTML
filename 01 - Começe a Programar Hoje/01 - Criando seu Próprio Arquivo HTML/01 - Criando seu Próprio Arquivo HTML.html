@@ -1,0 +1,55 @@
+<!--
+    Tendo um arquivo, é importante a inserção do .html, por esta ser a linguagem que o navegador entende e, ao utilizarmos a extensão, estamos orientando-o sobre qual deve ser a interpretação do arquivo por parte do navegador e do sistema operacional.
+
+    Em nosso primeiro teste, no Sublime, digitaremos:
+
+    "
+    Meu primeiro teste!
+
+
+    Seria isso um programa?
+    "
+
+    Feito isso, salvaremos, escrevemos as mensagens e deixamos o espaço de duas linhas entre a primeira frase e a segunda.
+
+    Ao abrirmos, é exibido o seguinte:
+
+    "Meu primeiro teste! Seria isso um programa?"
+
+    Notamos que há uma peculiaridade, será que isto é um programa?
+
+    Quando digitamos em nosso editor de texto, no código-fonte ou origem, pulamos duas linhas, entretanto, ao exibir no navegador, isto é ignorado completamente, e as frases são exibidas lado a lado.
+
+    Por que isso acontece?
+
+    A primeira coisa que precisamos entender é que o navegador está preparado para ler código HTML. Ele não sabe que, ao pularmos a linha com a tecla "Enter", ainda que sejam várias vezes, ele deve pular linhas. Tentaremos colocar quantas linhas quisermos entre as duas frases, e recarregar a página utilizando o botão "Recarregar", logo ao lado da barra onde se digita o endereço no navegador.
+
+    Com o uso do atalho "Ctrl + R", ou simplesmente pressionando-se a tecla "Enter" com o cursor sobre o endereço, o navegador nunca mostrará as linhas puladas. A ideia é que precisamos utilizar um comando especial, que o HTML tenha preparado, para pular linhas, no caso o <br>.
+
+    "
+    Meu primeiro teste!
+    <br>
+    Seria isso um programa?
+    "
+
+    Trata-se de uma tag HTML, e todas têm esta característica de começar com o símbolo de "menor" (<), o nome da tag - "br" é abreviação de break -, e fecha com o símbolo de "maior" (>). Isto indica ao navegador que ele deve pular uma linha.
+
+    Feitas estas alterações, atualizaremos a página e veremos que de fato foi pulada uma linha.
+
+    Ou seja, foi passada uma instrução HTML de quebra, que o navegador está preparado para entender. Se quisermos pular mais duas linhas, basta acrescentarmos mais dois comandos <br>.
+
+    É esta a primeira tag HTML que aprendemos, para pular linhas. Como estamos criando o programa, geraremos uma área de destaque que exibe a mensagem "Meu primeiro teste!".
+
+    O HTML conta com a tag <h1>. O "h" se origina da palavra heading, ou seja, cabeçalho. Significa que este é o primeiro título, ou título principal é algo que precisa ser destacado em uma página.
+
+    Uma particularidade da tag <br> é que, no início, inserimos <> e pronto - já para a tag <h1> e a maioria das tags HTML, precisaremos da mesma tag com uma barra </h1> para fechá-la, conforme vemos abaixo:
+
+    <h1> Meu primeiro teste!</h1>
+
+    Isso indica que ela começou antes de "Meu" e terminou após "teste!". Ou seja, tudo que está entre <h1> e </h1> está marcado pela tag <h1>. É como se usássemos um marcador de texto e, depois, passássemos sobre a frase "Meu primeiro teste!" e, desta forma, marcaríamos o conteúdo.
+-->
+<h1>Meu primeiro teste!</h1>
+<br>
+<br>
+<br>
+Seria isto um Programa?
