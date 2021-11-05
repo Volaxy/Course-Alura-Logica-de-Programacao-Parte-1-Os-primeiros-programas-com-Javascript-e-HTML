@@ -27,3 +27,17 @@ URL do Curso -> [Lógica de programação I: Os primeiros programas com Javascri
 * Para o navegador interpretar uma instrução JavaScript, não basta colocarmos a instrução JavaScript direto no HTML. Temos que utilizar a *tag* **`<script>`**. Dessa forma o navegador saberá que deve processar essa parte do código como linguagem JavaScript e não como HTML;
 * A primeira instrução que vimos do JavaScript foi o **`alert`**, que recebe como parâmetro um texto;
 * Por último, aprendemos que todo texto em JavaScript vem entre aspas.
+
+## 02 - Comunique-se com o Usuário
+* As convenções podem ser seguidas para o programador, ele pode não seguir elas, mas será mal visto.
+* A convenção é sempre utilizar letras minúsculas para as tags *HTML*.
+* O JavaScript é **case sensitive**, que faz distinção entre letras *MAIÚSCULAS* e *minúsculas*.
+* Um **parâmetro** é delimitado por `()` com algum valor entre os *parênteses*.
+* A recomendação é usar o `;` no final de cada linha de comando para evitar futuros problemas com a ausência do `;` no código.
+* O mundo JavaScript é delimitado pelo marcador `<script>` e `</script>`, e o mundo HTML é tudo que está fora do escopo dessas duas *tags*;
+* A função **`document.write()`** permite através do mundo JavaScript, escrever coisas no mundo HTML.
+* Se um conjunto de caracteres não está entre aspas, e for um tipo *numérico*, o JavaScript interpretará como número.
+* Em funções como **`document.write()`**, é possível fazer contas de + (soma), - (subtração), X (multiplicação) e / (divisão).
+* Quando se tem operação entre `"18"` e `"20"`, o JavaScript os interpreta como texto e junta as 2 **Strings**, formando `"1820"`, por exemplo, assim como `"18"` e `20`, ele converte o `20` para **String**.
+* As regras de *matemática* para operadores (+, -, *, /) também se aplicam em programação, com * e / sendo feitos antes da + e -, e as operações sendo feitas da esquerda para a direita.
+* É possível delimitar uma operação com **`()`** para priorizar operações dentro dos parênteses.
