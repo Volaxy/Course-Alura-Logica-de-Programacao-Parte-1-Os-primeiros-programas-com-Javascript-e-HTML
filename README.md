@@ -41,3 +41,13 @@ URL do Curso -> [Lógica de programação I: Os primeiros programas com Javascri
 * Quando se tem operação entre `"18"` e `"20"`, o JavaScript os interpreta como texto e junta as 2 **Strings**, formando `"1820"`, por exemplo, assim como `"18"` e `20`, ele converte o `20` para **String**.
 * As regras de *matemática* para operadores (+, -, *, /) também se aplicam em programação, com * e / sendo feitos antes da + e -, e as operações sendo feitas da esquerda para a direita.
 * É possível delimitar uma operação com **`()`** para priorizar operações dentro dos parênteses.
+
+## 03 - Torne seu Programa Dinâmico com Variáveis
+* Na programação, uma **variável** é um objeto (uma posição, frequentemente localizada na memória) capaz de reter e representar um valor ou expressão.
+* Para declarar uma variável em JavaScript usamos a sintaxe `var ano`.
+* Para atribuir um valor à uma **variável**, colocamos um `=` depois da declaração para atribuir um valor.
+* O jeito correto de se falar uma atribuição de uma variável com `=` é *"x RECEBE ..."*.
+* O processo do JavaScript para diferenciar valores de variáveis é feito vendo se o trecho está entre aspas, e se estiver, é uma string, caso negativo, será feita uma próxima pergunta: trata-se de um número? Caso a resposta seja "não", significa que se trata de uma variável.
+* A função **`Math.round()`** arredonda um número passado pelos `()`.
+* As variáveis melhoram a legibilidade do código, além de facilitar sua manutenção.
+* Uma convenção usada no mundo da programação é a seguinte: O nome de uma variável sempre se iniciará com uma letra minúscula. Se a variável contém duas palavras, por exemplo "idade + (nome)", a próxima palavra deve ser escrita com a primeira letra MAIÚSCULA. Este padrão recebe o nome de **camelCase**.

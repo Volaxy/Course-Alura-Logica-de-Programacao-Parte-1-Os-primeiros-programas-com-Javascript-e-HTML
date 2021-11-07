@@ -1,0 +1,78 @@
+<!--
+    Para mostrar a idade, alteraremos o texto para Flávio tem (...) anos e, incluiremos os anos de nascimento para termos como resultado final as idades de cada um:
+
+    <meta charset="UTF-8">
+    <script>
+        document.write("Flávio tem " + (2016 - 1977) + " anos");
+        document.write("<br>");
+        document.write("Joaquim tem " + (2016 - 1996) + " anos");
+        document.write("<br>");
+        document.write("Barney tem " + (2016 - 1976) + " anos");
+        document.write("<br>");
+    </script>
+
+    Só que, se salvarmos o programa como está, e avançarmos um ano, como se passássemos de 2016 para 2017, ou qualquer outro ano no futuro, o que acontecerá com nosso programa? Teríamos que alterar o ano manualmente para cada um dos comandos:
+
+    <meta charset="UTF-8">
+    <script>
+        document.write("Flávio tem " + (2017 - 1977) + " anos");
+        document.write("<br>");
+        document.write("Joaquim tem " + (2017 - 1996) + " anos");
+        document.write("<br>");
+        document.write("Barney tem " + (2017 - 1976) + " anos");
+        document.write("<br>");
+    </script>
+
+    Salvaremos e recarregaremos a página, para vermos que o programa funciona, sucessivamente, para todos os anos no futuro. Mas e se tivéssemos, em vez de três, quarenta pessoas? Teríamos que trocar manualmente o ano atual para cada uma delas, isso seria demasiadamente laborioso.
+
+    Queremos pensar em uma maneira para podermos, em um único lugar, escrever o ano e fazer com que ele seja acessado nos comandos, como se tivéssemos um envelope "ano" com um valor específico, como "2016". Portanto, onde temos 2016 no código, trocaremos por ano:
+
+    <meta charset="UTF-8">
+    <script>
+        document.write("Flávio tem " + (ano - 1977) + " anos");
+        document.write("<br>");
+        document.write("Joaquim tem " + (ano - 1996) + " anos");
+        document.write("<br>");
+        document.write("Barney tem " + (ano - 1976) + " anos");
+        document.write("<br>");
+    </script>
+
+    Se trocarmos o valor de ano, de 2016 para 2017, por exemplo, precisaremos fazer esta alteração somente em um lugar, e todos os lugares em que esta palavra for utilizada terão o novo valor aplicado.
+
+    Em nosso programa, conseguimos este efeito de "envelope" por meio da criação de variáveis. Como o próprio nome sugere, elas variam, e são representadas da seguinte forma:
+
+    var ano;
+
+    Mas qual é o valor da variável ano? Para que ele seja recebido, utilizaremos o símbolo = (sinal de igual). Em programação, não lemos = como "igual", e sim como "recebe". Definiremos então o valor como 2016:
+
+    <script>
+        var ano = 2016;
+
+        document.write("Flávio tem " + (ano - 1977) + " anos");
+        document.write("<br>");
+        document.write("Joaquim tem " + (ano - 1996) + " anos");
+        document.write("<br>");
+        document.write("Barney tem " + (ano - 1976) + " anos");
+        document.write("<br>");
+    </script>
+
+    Quando o JavaScript se depara com a variável ano, ele somente a interpretará como uma string se estiver em aspas ("ano"). Como não é o caso, ele verificará se é um número. Não se tratando de um numeral, o JS determinará se é uma variável. Anteriormente, escrevemos var ano, sendo assim, ela existe, e quando o valor for computado, a palavra ano será trocada pelo valor 2017.
+
+    O processo de "raciocínio" do JavaScript será questionar se determinado trecho está entre aspas, e se estiver, é uma string, caso negativo, será feita uma próxima pergunta: trata-se de um número? Caso a resposta seja "não", significa que se trata de uma variável.
+
+    É interessante trabalharmos com variáveis, porque ao declaramos eles em um único lugar, várias instruções podem depender de uma mesma variável e, quando alteramos seu valor, isso é refletido em todos os pontos do código onde aparece.
+
+    O prefixo var só é utilizado ao declararmos a variável pela primeira vez, então não é necessário utilizá-lo ao definirmos um novo valor. As variáveis nos ajudam, também, a fazer a manutenção de nosso código, já que ela é declarada em um único ponto e pode ser utilizada em diversos momentos.
+-->
+<script>
+    var ano = 2016;
+
+    document.write("Flávio tem " + (ano - 1977) + " anos");
+    document.write("<br>");
+    document.write("Joaquim tem " + (ano - 1996) + " anos");
+    document.write("<br>");
+
+    ano = 2017;
+    document.write("Barney tem " + (ano - 1976) + " anos");
+    document.write("<br>");
+</script>
