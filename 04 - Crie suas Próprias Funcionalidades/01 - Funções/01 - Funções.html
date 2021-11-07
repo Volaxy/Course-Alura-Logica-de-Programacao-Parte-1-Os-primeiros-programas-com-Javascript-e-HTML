@@ -1,0 +1,59 @@
+<!--
+    E se pudéssemos criar nossa própria funcionalidade, algo que tenha uma função bem definida, Como o "alert()" ou o "Math.round()"? Em JavaScript ou em qualquer outra linguagem de programação, há meios para criarmos nossas próprias funcionalidades.
+
+    Temos o seguinte código
+
+    <meta charset="UTF-8">
+
+    <script>
+        var ano = 2016;
+
+        document.write("Flávio tem " + (ano - 1977) + " anos");
+        ?
+        document.write("Joaquim tem " + (ano - 1996) + " anos");
+        ?
+
+        ano = 2017;
+        document.write("Barney tem " + (ano - 1976) + " anos");
+    </script>
+
+    Supondo que estamos seguindo um texto de um livro, faria sentido se o conteúdo fosse o seguinte?
+
+    document.write("Flávio tem " + (ano - 1977) + " anos");
+    pulaLinha
+    document.write("Joaquim tem " + (ano - 1996) + " anos");
+    pulaLinha
+
+    Como criamos uma função no JS? Convencionaremos que todas as funções que criarmos estarão nas primeiras instruções da tag <script>, ou seja, declararemos no início do código. Para declararmos uma função, utilizaremos o termo em inglês function, seguido de um nome, no caso, pulaLinha:
+
+    <meta charset="UTF-8">
+
+    <script>
+        function pulaLinha()
+
+        //...
+    </script>
+
+    Inserimos os parênteses por ser uma exigência do JavaScript para declararmos uma função. Queremos que esta função escreva document.write("<br>"), portanto faremos isso dentro do bloco da função, entre chaves:
+
+    <meta charset="UTF-8">
+
+    <script>
+
+        function pulaLinha() {
+            document.write();
+        }
+        
+            //...
+    </script>
+
+    Tudo que estiver entre as chaves pertence à função pulaLinha(). Um ponto importante - a função é sempre descrita por um verbo, seja ele "pula", "grita", "comemora", ou qualquer outro -, isto porque ela sempre indica uma ação a ser executada.
+
+    Trata-se de uma boa prática, uma convenção no mundo da programação - se estamos em um bloco, utilizamos "Tab" para criar um espaçamento na linha e, assim, o código ficará indentado e teremos uma melhor noção de hierarquia. Neste caso, saberemos que document.write() pertence à função pulaLinha().
+
+    Assim, é como se, ao chegar em pulaLinha(), o JavaScript parasse para acessar o bloco da função e executasse as funções contidas nela. Podemos criar nossas próprias funções para deixar nossa programação mais legível, interessante, e mais fácil de se manter.
+
+    A vantagem de uma função é tornar legível a intenção do que queremos fazer. Se quisermos pular uma linha, por exemplo, criaremos o pulaLinha(), sempre utilizando um verbo e indicando uma ação.
+
+    Uma função representa um conjunto de instruções, e é possível ter uma, duas, cem instruções - não há limites. Sendo assim, será desnecessário reescrevê-las em diversos pontos no código, basta utilizarmos a função criada.
+-->

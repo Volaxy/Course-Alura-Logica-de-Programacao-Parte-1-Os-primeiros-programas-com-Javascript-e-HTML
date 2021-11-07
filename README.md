@@ -51,3 +51,14 @@ URL do Curso -> [Lógica de programação I: Os primeiros programas com Javascri
 * A função **`Math.round()`** arredonda um número passado pelos `()`.
 * As variáveis melhoram a legibilidade do código, além de facilitar sua manutenção.
 * Uma convenção usada no mundo da programação é a seguinte: O nome de uma variável sempre se iniciará com uma letra minúscula. Se a variável contém duas palavras, por exemplo "idade + (nome)", a próxima palavra deve ser escrita com a primeira letra MAIÚSCULA. Este padrão recebe o nome de **camelCase**.
+
+## 04 - Crie suas Próprias Funcionalidades
+* **Funções** são instruções que são executadas sempre que um código às invoca.
+* Funções são definidas no JavaScript como: `function NOME_DA_FUNCAO() { INSTRUÇÕES }`.
+* Tudo que estiver entre as `{}` pertence à função.
+* Se estamos em um bloco, utilizamos "Tab" para criar um espaçamento na linha e, assim, o código ficará indentado e teremos uma melhor noção de hierarquia.
+* Para comentar uma linha de código em JavaScript, usamos `//` na linha que queremos comentar.
+* **Comentários** não são interpretados pelo JavaScript.
+* Funções podem receber **parâmetros**.
+* Um **parâmetro** é uma variável que é declarada entre os `()` de uma função.
+* Uma **função** pode conter uma instrução chamando outra **função**.
