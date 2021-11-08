@@ -62,3 +62,10 @@ URL do Curso -> [Lógica de programação I: Os primeiros programas com Javascri
 * Funções podem receber **parâmetros**.
 * Um **parâmetro** é uma variável que é declarada entre os `()` de uma função.
 * Uma **função** pode conter uma instrução chamando outra **função**.
+
+## 05 - Pratique Resolvendo Problemas do seu Dia a Dia
+* É importante conhecer o problema que desejamos resolver para criarmos programas que saibam resolve-los.
+* Para retornar algum valor como resultado da função, usamos o **`return`**.
+* Sempre que fazemos uma operação matemática com valores não definidos temos o resultado **`NaN`**.
+* Dado um trecho de código, por exemplo: `mostra("O meu IMC é " + calculaImc(1.63, 48));`. É importante entender que a concatenação não é feita com a função, mas sim com seu retorno.
+* A função **`prompt()`** no JavaScript recebe (ou não) um parâmetro de entrada, e retorna o valor digitado pelo usuário no pop-up exibido na tela.

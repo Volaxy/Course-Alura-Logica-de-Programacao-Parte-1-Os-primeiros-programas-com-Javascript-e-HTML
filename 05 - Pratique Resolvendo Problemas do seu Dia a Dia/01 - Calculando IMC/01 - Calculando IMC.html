@@ -1,0 +1,130 @@
+<!--
+    ESTRUTURA MÍNIMA
+    <meta charset="utf-8">
+
+    <script>
+        function pulaLinha() {
+            document.write("<br>");
+        }
+
+        function mostra(mensagem) {
+            document.write(mensagem);
+            pulaLinha();
+        }
+    </script>
+
+    O cálculo do IMC, segundo a Organização Mundial da Saúde, é composto pelo peso divido pela altura multiplicado pela altura. Portanto, criaremos uma variável chamada pesoFlavio, e outra, alturaFlavio:
+
+    <meta charset="UTF-8">
+
+    <script>
+
+        function pulaLinha() {
+
+            document.write("<br>");
+            document.write("<br>");
+
+    }
+
+        function mostra(frase) {
+
+            document.write(frase);
+            pulaLinha();
+    }
+
+    var pesoFlavio = 73;
+    var alturaFlavio = 1.71;
+
+    </script>
+
+    Partiremos agora para o cálculo do IMC. Criaremos uma variável chamada imcFlavio, que receberá a divisão entre pesoFlavio e alturaFlavio multiplicada pela alturaFlavio:
+
+    var pesoFlavio = 73;
+    var alturaFlavio = 1.71;
+
+    var imcFlavio = pesoFlavio / alturaFlavio * alturaFlavio
+
+    Se deixarmos como está, teremos um problema. Isso porque ele considerará a divisão antes de realizar a multiplicação. Para evitarmos isso, isolaremos a operação de multiplicação com parênteses:
+    
+    var pesoFlavio = 73;
+    var alturaFlavio = 1.71;
+
+    var imcFlavio = pesoFlavio / (alturaFlavio * alturaFlavio);
+
+    Com o resultado do IMC, utilizaremos a função mostra() para imprimi-lo na tela:
+
+    var pesoFlavio = 73;
+    var alturaFlavio = 1.71;
+
+    var imcFlavio = pesoFlavio / (alturaFlavio * alturaFlavio);
+
+    mostra("O imc do Flávio é " + imcFlavio);
+
+    E se outro programador quiser calcular o IMC, digamos, da sua tia? Serão criadas as variáveis:
+
+    var pesoTia = 50;
+    var alturaTia = 1.62;
+
+    Ele terá que saber a fórmula para calcular o IMC, que é o peso dividido pela altura, multiplicada pela altura. Assim, será repetida a aplicação do cálculo de IMC.
+
+    Suponhamos que o cálculo do IMC é eventualmente alterado pela Organização Mundial da Saúde, assim, teremos que lembrar de todos os lugares em que o cálculo aparece. Resolveremos este problema criando uma função chamada calculaImc():
+
+    Não há necessidade de colocarmos o ponto e vírgula (;) após fecharmos a chave pois o JavaScript já entende que final e um bloco indicam o final de uma instrução.
+
+    function calculaImc() {
+
+        var imcFlavio = pesoFlavio / (alturaFlavio * alturaFlavio);
+
+    }
+
+    Como queremos que a mesma função sirva para várias pessoas, em vez de utilizarmos os nomes dos indivíduos nas variáveis, manteremos somente o que cada uma representa:
+
+    function calculaImc() {
+
+        var imc = peso / (altura* altura);
+
+    }
+
+    Sabemos que, na programação, ao adotarmos o pesoFlavio, estamos nos referindo ao valor 73, da variável, e o mesmo acontecerá para todos os demais. Para simplificar, inseriremos os números diretamente:
+
+    calculaImc(73, 1.71);
+    calculaImc(68, 1.72);
+
+    Salvaremos, retornaremos ao navegador e recarregaremos a página. Veremos que nada é exibido, e isto acontece porque não preparamos a função calculaImc() para receber dois parâmetros. Temos que indicar que os parâmetro serão altura, peso:
+
+    function calculaImc(altura, peso) {
+
+        var imc = peso / (altura* altura);
+
+    }
+
+    calculaImc(1.71, 73);
+    calculaImc(1.72, 68);
+
+    Ao chamarmos o calculaImc(), o 1.71 será passado para altura, e 73 para o peso. Assim, o IMC será calculado com base nos valores dos parâmetros. Para que os resultados sejam exibidos, incluiremos a instrução mostra() em nossa função:
+
+    function calculaImc(altura, peso) {
+        var imc = peso / (altura * altura);
+        mostra("O imc calculado é " + imc);
+    }
+-->
+<meta charset="utf-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(mensagem) {
+        document.write(mensagem);
+        pulaLinha();
+    }
+
+    function calculaImc(altura, peso) {
+        var imc = peso / (altura * altura);
+        mostra("O imc calculado é " + imc);
+    }
+
+    calculaImc(1.71, 73);
+    calculaImc(1.72, 68);
+</script>
