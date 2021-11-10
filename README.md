@@ -69,3 +69,15 @@ URL do Curso -> [Lógica de programação I: Os primeiros programas com Javascri
 * Sempre que fazemos uma operação matemática com valores não definidos temos o resultado **`NaN`**.
 * Dado um trecho de código, por exemplo: `mostra("O meu IMC é " + calculaImc(1.63, 48));`. É importante entender que a concatenação não é feita com a função, mas sim com seu retorno.
 * A função **`prompt()`** no JavaScript recebe (ou não) um parâmetro de entrada, e retorna o valor digitado pelo usuário no pop-up exibido na tela.
+
+## 06 - Execute Códigos Diferentes Dependendo da Condição
+* O retorno do valor digitado na função **`prompt()`** sempre será no formato *texto*.
+* Quando uma variável do tipo *texto* contém um número dentro dele, e acontece uma operação de `-`, `/` ou `*`, o JavaScript converte o conteúdo do *texto* para um *número* e executa a operação.
+* A função **`parseInt()`** do JavaScript, recebe um valor (*texto* ou *número*) e transforma em um *número inteiro*.
+* Para testarmos uma igualdade em JavaScript, utilizamos **`==`**.
+* O **`if`** testa se uma condição é *verdadeira* ou *falsa*, e se for *verdadeira*, ela executa as instruções dentro do **`if`**.
+* Os caracteres **`&&`** significam *e* na hora da comparação, se uma das condições for *falsa*, o bloco correspondente não será executado.
+* Os caracteres **`!=`** significam *diferente* e verifica se um parâmetro não é igual ao outro.
+* O **`else`** vem depois do fechamento das `{}` do *if*, e se a condição do *if* for falsa, as instruções dentro das `{}` do **`else`** serão executadas.
+* A função **`Math.random()`** sorteia um número aleatório entre 0 e 1.
+* A função **`console.log()`** mostra alguma coisa passada como parâmetro no *console* do navegador.
