@@ -100,3 +100,12 @@ URL do Curso -> [Lógica de programação I: Os primeiros programas com Javascri
 * Utilizamos o **`input.value`** (com "input" sendo um nome de variável qualquer contendo uma referência para um elemento HTML) no mundo JavaScript para saber o valor que está armazenado na *tag* HTML.
 * A função **`button.onclick`** (com "button" sendo um nome de variável referenciando um botão) armazena uma função que será executada ao clicar no botão correspondente onde foi atrelada a função.
 * Ao digitar o nome de uma função no console do navegador com os `()`, a função é executada, mas ao digitar somente o nome da função excluindo os `()`, o console mostra a função por completo, sem executa-la.
+* A função **`input.focus()`** permite que a entrada de teclado do usuário fique focada no input em que a função é executada.
+
+## 09 - Trabalhe com Muitos Dados
+* Para declarar um **array**, coloca-se `var array = []`, onde dentro dos `[]`, colocamos os valores separados por `,`, `[1, 2, 3, ...]`.
+* Uma convenção utilizada para a nomenclatura de **arrays**, é sempre declarar a variável no *plural*.
+* Para acessar um elemento dentro de um **array**, basta digitar o nome do *array* e entre `[]` a posição que se quer acessar, (**OBS.: As posições dentro de um array sempre começam a partir da posição 0**).
+* Para verificar o tamanho de um **array**, usamos o **`array.length`**, onde ele retorna o número de elementos contidos no **array**.
+* Ao inserir os elementos em um **array** no JavaScript, podemos inserir qualquer tipo de dado além do tipo do primeiro inserido.
+* A função **`array.push()`**, insere novos dados no **array**.
