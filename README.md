@@ -92,3 +92,11 @@ URL do Curso -> [Lógica de programação I: Os primeiros programas com Javascri
 * O **pós-incremento**, significa um sinal de `++` logo após uma variável, incrementando seu valor por 1, exemplo: `(variavel++) = (variavel = variavel + 1)`.
 * O **`break`** força a "quebra" do loop em que ele está inserido.
 * Para que as *casas decimais* de um número sejam mantidas, usa-se o **`parseFloat()`**, convertendo o parâmetro para o tipo *float*.
+
+## 08 - Interaja de Maneira Diferente com o Usuário
+* A tag **`<input/>`** cria um campo para entrada de texto no navegador.
+* A tag **`<button></button>`** cria um botão no navegador, onde entre a abertura e o fechamento da tag, podemos inserir uma frase para aparecer dentro do botão.
+* A função **`document.querySelector()`**, recebe como parâmetro o nome da *tag* que desejamos "pegar" no mundo HTML, e retorna uma *referência* para aquela *tag*.
+* Utilizamos o **`input.value`** (com "input" sendo um nome de variável qualquer contendo uma referência para um elemento HTML) no mundo JavaScript para saber o valor que está armazenado na *tag* HTML.
+* A função **`button.onclick`** (com "button" sendo um nome de variável referenciando um botão) armazena uma função que será executada ao clicar no botão correspondente onde foi atrelada a função.
+* Ao digitar o nome de uma função no console do navegador com os `()`, a função é executada, mas ao digitar somente o nome da função excluindo os `()`, o console mostra a função por completo, sem executa-la.
