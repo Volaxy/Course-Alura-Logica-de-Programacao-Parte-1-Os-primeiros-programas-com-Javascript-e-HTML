@@ -81,3 +81,14 @@ URL do Curso -> [Lógica de programação I: Os primeiros programas com Javascri
 * O **`else`** vem depois do fechamento das `{}` do *if*, e se a condição do *if* for falsa, as instruções dentro das `{}` do **`else`** serão executadas.
 * A função **`Math.random()`** sorteia um número aleatório entre 0 e 1.
 * A função **`console.log()`** mostra alguma coisa passada como parâmetro no *console* do navegador.
+
+## 07 - Repita Tarefas
+* A instrução **`while`** repete um determinado trecho de código entre as `{}` até que a condição de repetição descrita nos `()` do **`while`** se torne *falsa*.
+* A função **`isNaN()`** verifica se um determinado valor é **`Nan`** e retorna *true* ou *false*.
+* O laço **`for`** contém três partes `for(Parte 1; Parte 2; Parte 3)`, onde:
+    * Parte 1: Geralmente contém a inicialização da variável que será o contador da instrução **`for`**.
+    * Parte 2: Verifica a condição retornando *true* ou *false*, determinando se irá executar as instruções do laço ou não.
+    * Parte 3: Contém o incremento ou decremento da variável de contagem do laço.
+* O **pós-incremento**, significa um sinal de `++` logo após uma variável, incrementando seu valor por 1, exemplo: `(variavel++) = (variavel = variavel + 1)`.
+* O **`break`** força a "quebra" do loop em que ele está inserido.
+* Para que as *casas decimais* de um número sejam mantidas, usa-se o **`parseFloat()`**, convertendo o parâmetro para o tipo *float*.
